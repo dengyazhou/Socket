@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "Socket/SocketViewController.h"
+#import "Socket/GCDSocketViewController.h"
 
 @interface ViewController ()
 
@@ -23,9 +24,13 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-#pragma mark 1、socket
-    SocketViewController *vc = [[SocketViewController alloc] init];
+#pragma mark 2、CocoaAsyncSocket的GCDAsyncSocket
+    GCDSocketViewController *vc = [[GCDSocketViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    
+#pragma mark 1、socket
+//    SocketViewController *vc = [[SocketViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

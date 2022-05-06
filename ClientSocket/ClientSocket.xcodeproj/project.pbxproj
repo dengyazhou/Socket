@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		932F8DA12824CA47003E065E /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DA02824CA47003E065E /* SocketViewController.m */; };
+		932F8DAA282535D8003E065E /* GCDSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DA9282535D8003E065E /* GCDSocketViewController.m */; };
 		937EA5212824C1DF00204D29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5202824C1DF00204D29 /* AppDelegate.m */; };
 		937EA5242824C1DF00204D29 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5232824C1DF00204D29 /* SceneDelegate.m */; };
 		937EA5272824C1DF00204D29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5262824C1DF00204D29 /* ViewController.m */; };
@@ -23,6 +24,8 @@
 		5A075D83A05B729B6F5A77CC /* Pods-ClientSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientSocket.debug.xcconfig"; path = "Target Support Files/Pods-ClientSocket/Pods-ClientSocket.debug.xcconfig"; sourceTree = "<group>"; };
 		932F8D9F2824CA47003E065E /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		932F8DA02824CA47003E065E /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
+		932F8DA8282535D8003E065E /* GCDSocketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSocketViewController.h; sourceTree = "<group>"; };
+		932F8DA9282535D8003E065E /* GCDSocketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSocketViewController.m; sourceTree = "<group>"; };
 		937EA51C2824C1DF00204D29 /* ClientSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937EA51F2824C1DF00204D29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		937EA5202824C1DF00204D29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 			children = (
 				932F8D9F2824CA47003E065E /* SocketViewController.h */,
 				932F8DA02824CA47003E065E /* SocketViewController.m */,
+				932F8DA8282535D8003E065E /* GCDSocketViewController.h */,
+				932F8DA9282535D8003E065E /* GCDSocketViewController.m */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				937EA5272824C1DF00204D29 /* ViewController.m in Sources */,
 				937EA5212824C1DF00204D29 /* AppDelegate.m in Sources */,
 				937EA5322824C1E100204D29 /* main.m in Sources */,
+				932F8DAA282535D8003E065E /* GCDSocketViewController.m in Sources */,
 				937EA5242824C1DF00204D29 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
