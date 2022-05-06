@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <CocoaAsyncSocket/GCDAsyncSocket.h>
+#import "Socket/SocketViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"第一页";
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+#pragma mark 1、socket
+    SocketViewController *vc = [[SocketViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 
