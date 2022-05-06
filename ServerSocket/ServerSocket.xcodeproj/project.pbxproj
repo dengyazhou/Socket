@@ -15,6 +15,7 @@
 		937EA5512824C25A00204D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937EA5502824C25A00204D29 /* Assets.xcassets */; };
 		937EA5542824C25A00204D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937EA5522824C25A00204D29 /* LaunchScreen.storyboard */; };
 		937EA5572824C25A00204D29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5562824C25A00204D29 /* main.m */; };
+		B6CA686D2824D9B0009D9552 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA686C2824D9B0009D9552 /* SocketViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		937EA5532824C25A00204D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		937EA5552824C25A00204D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		937EA5562824C25A00204D29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6CA686B2824D9B0009D9552 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
+		B6CA686C2824D9B0009D9552 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		DEABA40BB5519879E4001114 /* Pods_ServerSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServerSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EDF6666BD478B4A7A876C7 /* Pods-ServerSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerSocket.debug.xcconfig"; path = "Target Support Files/Pods-ServerSocket/Pods-ServerSocket.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,7 @@
 				937EA5482824C25800204D29 /* SceneDelegate.m */,
 				937EA54A2824C25800204D29 /* ViewController.h */,
 				937EA54B2824C25800204D29 /* ViewController.m */,
+				B6CA686A2824D982009D9552 /* Socket */,
 				937EA54D2824C25800204D29 /* Main.storyboard */,
 				937EA5502824C25A00204D29 /* Assets.xcassets */,
 				937EA5522824C25A00204D29 /* LaunchScreen.storyboard */,
@@ -97,8 +101,16 @@
 				F2EDF6666BD478B4A7A876C7 /* Pods-ServerSocket.debug.xcconfig */,
 				5624D1E5DCD6EF9099D690A8 /* Pods-ServerSocket.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6CA686A2824D982009D9552 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				B6CA686B2824D9B0009D9552 /* SocketViewController.h */,
+				B6CA686C2824D9B0009D9552 /* SocketViewController.m */,
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CA686D2824D9B0009D9552 /* SocketViewController.m in Sources */,
 				937EA54C2824C25800204D29 /* ViewController.m in Sources */,
 				937EA5462824C25800204D29 /* AppDelegate.m in Sources */,
 				937EA5572824C25A00204D29 /* main.m in Sources */,
