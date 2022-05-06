@@ -7,5 +7,6 @@ target 'ServerSocket' do
 
   # Pods for ServerSocket
   pod 'CocoaAsyncSocket'
+  pod 'Masonry'
 
 end
