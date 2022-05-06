@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <CocoaAsyncSocket/GCDAsyncSocket.h>
 
 @interface ViewController ()
 

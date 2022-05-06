@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63857224C2367B51A41748C5 /* Pods_ServerSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABA40BB5519879E4001114 /* Pods_ServerSocket.framework */; };
 		937EA5462824C25800204D29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5452824C25800204D29 /* AppDelegate.m */; };
 		937EA5492824C25800204D29 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5482824C25800204D29 /* SceneDelegate.m */; };
 		937EA54C2824C25800204D29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937EA54B2824C25800204D29 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5624D1E5DCD6EF9099D690A8 /* Pods-ServerSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerSocket.release.xcconfig"; path = "Target Support Files/Pods-ServerSocket/Pods-ServerSocket.release.xcconfig"; sourceTree = "<group>"; };
 		937EA5412824C25800204D29 /* ServerSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937EA5442824C25800204D29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		937EA5452824C25800204D29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		937EA5532824C25A00204D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		937EA5552824C25A00204D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		937EA5562824C25A00204D29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEABA40BB5519879E4001114 /* Pods_ServerSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServerSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EDF6666BD478B4A7A876C7 /* Pods-ServerSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerSocket.debug.xcconfig"; path = "Target Support Files/Pods-ServerSocket/Pods-ServerSocket.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63857224C2367B51A41748C5 /* Pods_ServerSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223B0D417868A6805DABBB4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEABA40BB5519879E4001114 /* Pods_ServerSocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		937EA5382824C25800204D29 = {
 			isa = PBXGroup;
 			children = (
 				937EA5432824C25800204D29 /* ServerSocket */,
 				937EA5422824C25800204D29 /* Products */,
+				A38F61B760C53AB38AA6652B /* Pods */,
+				223B0D417868A6805DABBB4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = ServerSocket;
 			sourceTree = "<group>";
 		};
+		A38F61B760C53AB38AA6652B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2EDF6666BD478B4A7A876C7 /* Pods-ServerSocket.debug.xcconfig */,
+				5624D1E5DCD6EF9099D690A8 /* Pods-ServerSocket.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 937EA55A2824C25A00204D29 /* Build configuration list for PBXNativeTarget "ServerSocket" */;
 			buildPhases = (
+				60FEE645CD035731DE5E3BD8 /* [CP] Check Pods Manifest.lock */,
 				937EA53D2824C25800204D29 /* Sources */,
 				937EA53E2824C25800204D29 /* Frameworks */,
 				937EA53F2824C25800204D29 /* Resources */,
+				E9DE9A786C24D951915F44F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60FEE645CD035731DE5E3BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ServerSocket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9DE9A786C24D951915F44F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ServerSocket/Pods-ServerSocket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ServerSocket/Pods-ServerSocket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ServerSocket/Pods-ServerSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		937EA53D2824C25800204D29 /* Sources */ = {
@@ -289,6 +358,7 @@
 		};
 		937EA55B2824C25A00204D29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EDF6666BD478B4A7A876C7 /* Pods-ServerSocket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +387,7 @@
 		};
 		937EA55C2824C25A00204D29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5624D1E5DCD6EF9099D690A8 /* Pods-ServerSocket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
